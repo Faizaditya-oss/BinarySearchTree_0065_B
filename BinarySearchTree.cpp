@@ -80,4 +80,19 @@ void insert()
        return;
    }
 }
+
+void search(int element, Node *&parent, Node *&currentnode)
+{
+  // This function searches the currentnode of the specified node as well as the currentnode of its parent
+  currentnode = root;
+  parent = nullptr;
+  while ((currentnode != nullptr) && (currentnode->info !=element))
+  {
+    parent = currentnode;
+    if (element < currentnode->info)
+       currentnode = currentnode->leftchild;
+    else
+    currentnode = currentnode->rightchild;
+  }
+}
 };
