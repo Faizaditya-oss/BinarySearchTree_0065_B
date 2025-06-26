@@ -118,35 +118,6 @@ void inorder (Node *ptr)
     inorder (ptr->rightchild);
 }
 
-void preorder(Node *ptr)
-{
-    if(isEmpty())
-    {
-        cout << " Tree is empty " << endl;
-        return;
-    }
-    if (ptr == nullptr)
-    return;
-    
-    preorder (ptr->leftchild);
-    cout << ptr->info << " "; // Parent
-    preorder (ptr->rightchild);
-}
-
-void postorder (Node *ptr)
-{
-    if(isEmpty())
-    {
-        cout << " Tree is empty " << endl;
-        return;
-    }
-    if (ptr == nullptr)
-    return;
-    
-    postorder (ptr->leftchild);
-    cout << ptr->info << " "; // Parent
-    postorder (ptr->rightchild);
-}
 
 
 
