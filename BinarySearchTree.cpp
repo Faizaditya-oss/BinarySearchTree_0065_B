@@ -49,5 +49,17 @@ void insert()
    Node *parent = nullptr;
    Node* currentnode = nullptr;
    Search(x, parent, currentnode);
+
+   // Step 5: If parent is NULL (tree is empty)
+   if (parent == nullptr)
+   {
+    // 5a: Mark the new node as root
+    root = newnode;
+
+    // 5b: exit
+    return;
+   }
+
+   
 }
 };
