@@ -95,4 +95,8 @@ void search(int element, Node *&parent, Node *&currentnode)
     currentnode = currentnode->rightchild;
   }
 }
+
+
+
+  
 };
