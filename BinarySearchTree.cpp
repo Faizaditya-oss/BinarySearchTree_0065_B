@@ -97,6 +97,27 @@ void search(int element, Node *&parent, Node *&currentnode)
 }
 
 
+bool isEmpty()
+{
+    // Checks if the tree is empty
+     return root == nullptr;
+}
+
+void inorder (Node *ptr)
+{
+    if(isEmpty())
+    {
+        cout << " Tree is empty " << endl;
+        return;
+    }
+    if(ptr == nullptr)
+    return;
+
+    inorder (ptr->leftchild);
+    cout << ptr->info << " "; // Parent
+    inorder (ptr->rightchild);
+}
+
 
   
 };
