@@ -48,7 +48,7 @@ void insert()
    // Step 4: Locate the node which will be the parent of the new node to be inserted
    Node *parent = nullptr;
    Node* currentnode = nullptr;
-   Search(x, parent, currentnode);
+   search(x, parent, currentnode);
 
    // Step 5: If parent is NULL (tree is empty)
    if (parent == nullptr)
@@ -117,6 +117,22 @@ void inorder (Node *ptr)
     cout << ptr->info << " "; // Parent
     inorder (ptr->rightchild);
 }
+
+void preorder(Node *ptr)
+{
+    if(isEmpty())
+    {
+        cout << " Tree is empty " << endl;
+        return;
+    }
+    if (ptr == nullptr)
+    return;
+    
+    preorder (ptr->leftchild);
+    cout << ptr->info << " "; // Parent
+    preorder (ptr->rightchild);
+}
+
 
 
   
