@@ -18,3 +18,15 @@ class Node
     }
 };
 
+class binarytree
+{
+    public:
+    Node*root;
+
+    binarytree()
+
+    {
+        root = nullptr; // Initializing root to null
+    }
+    
+};
