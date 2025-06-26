@@ -41,7 +41,9 @@ void insert()
     // Step 2 : Asign value to the data field of the new node
     newnode->info = x;
 
-   
+    // Step 3: Make the left and right child of the new node point to NULL
+    newnode->leftchild = nullptr;
+    newnode->rightchild = nullptr;
 
 }
 };
