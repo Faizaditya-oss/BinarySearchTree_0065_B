@@ -60,6 +60,16 @@ void insert()
     return;
    }
 
+   // Step 6: If the value in the data fiel of new mode is less then that parent
+   if (x < parent ->info)
+   {
+    // 6a: Make the left child or parent point to thr new node
+    parent->leftchild = newnode;
+
+    // 6b: Exit
+    return;
+   }
+
    
 }
 };
