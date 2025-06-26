@@ -70,6 +70,14 @@ void insert()
     return;
    }
 
-   
+   // Step 7: If the value in the data field id greater than that of the parent
+   else if (x > parent->info)
+   {
+     // 7a: Make the right child of parent point to the new node
+        parent->rightchild = newnode;
+
+    // 7b: exit
+       return;
+   }
 }
 };
